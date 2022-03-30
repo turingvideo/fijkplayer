@@ -19,7 +19,7 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/shared_preferences/ios"
 
 SPEC CHECKSUMS:
-  fijkplayer: 3b0480fa18d37a3cc8c0a575e00b56de5c188108
+  fijkplayer: aaf9458ad2008c56bb7fb2757f95ee92b5573f47
   Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
   shared_preferences: af6bfa751691cdc24be3045c43ec037377ada40d
 
