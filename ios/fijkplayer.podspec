@@ -28,9 +28,10 @@ Flutter plugin for ijkplayer
 
   # s.use_frameworks!
 
+  #s.dependency 'BIJKPlayer', '~> 0.7.16'
   s.dependency 'TIJKMediaPlayer', '~> 0.8.0'
   # s.dependency "TIJKMediaPlayer", :git => "git@github.com:turingvideo/TIJKMediaPlayer.git", :branch => master
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 end
 
