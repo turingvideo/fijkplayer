@@ -31,7 +31,6 @@ import 'dart:math';
 import 'dart:typed_data';
 import 'dart:ui';
 
-import 'package:fijkplayer/ui/hit_test_blocker.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -40,13 +39,23 @@ import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 
 part 'core/fijklog.dart';
+
 part 'core/fijkoption.dart';
+
 part 'core/fijkplayer.dart';
+
 part 'core/fijkplugin.dart';
+
 part 'core/fijkvalue.dart';
+
 part 'core/fijkview.dart';
+
 part 'core/fijkvol.dart';
+
 part 'ui/panel.dart';
+
 part 'ui/panel2.dart';
+
 part 'ui/slider.dart';
+
 part 'ui/volume.dart';
