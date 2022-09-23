@@ -6,6 +6,13 @@ import 'media_item.dart';
 
 const List<MediaUrl> samples = [
   MediaUrl(
+      title: 'RTMP H265 flv',
+      url: 'rtmp://dev-srs-1.turingvideo.com:1935/live/test_265'),
+  MediaUrl(
+      title: "assets file H265", url: "asset:///assets/ocean_100k_new_265.flv"),
+  MediaUrl(
+      title: "assets file H264", url: "asset:///assets/ocean_100k_265.flv"),
+  MediaUrl(
       title: "Aliyun", url: "http://player.alicdn.com/video/aliyunmedia.mp4"),
   MediaUrl(
       title: "http 404", url: "https://fijkplayer.befovy.com/butterfly.flv"),

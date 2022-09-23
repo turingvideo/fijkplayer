@@ -24,6 +24,11 @@ class _VideoScreenState extends State<VideoScreen> {
     player.setOption(FijkOption.hostCategory, "enable-snapshot", 1);
     player.setOption(FijkOption.playerCategory, "mediacodec-all-videos", 1);
     startPlay();
+    player.addListener(playerListener);
+  }
+
+  void playerListener() {
+    print('=====================\n ${player.value} \n================');
   }
 
   void startPlay() async {
@@ -62,6 +67,7 @@ class _VideoScreenState extends State<VideoScreen> {
   @override
   void dispose() {
     super.dispose();
+    player.removeListener(playerListener);
     player.release();
   }
 }

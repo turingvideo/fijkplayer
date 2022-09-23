@@ -118,6 +118,8 @@ class _LocalPathState extends State<LocalPath> {
   @override
   Widget build(BuildContext context) {
     int currentLength = current.absolute.path.length;
+    print('${current.absolute.path}');
+    print('$current');
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
