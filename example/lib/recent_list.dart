@@ -5,6 +5,9 @@ import 'app_bar.dart';
 import 'media_item.dart';
 
 const List<MediaUrl> samples = [
+  MediaUrl(title: "h264", url: "asset:///assets/re.h264"),
+  MediaUrl(title: "crosswalk", url: "asset:///assets/crosswalk.mp4"),
+  MediaUrl(title: "assets file g711", url: "asset:///assets/test-g711.mp4"),
   MediaUrl(
       title: 'RTMP H265 flv',
       url: 'rtmp://dev-srs-1.turingvideo.com:1935/live/test_265'),

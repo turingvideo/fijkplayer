@@ -44,6 +44,9 @@ flutter:
     - assets/cover.png
     - assets/ocean_100k_265.flv
     - assets/ocean_100k_new_265.flv
+    - assets/test-g711.mp4
+    - assets/crosswalk.mp4
+    - assets/re.h264
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
 
