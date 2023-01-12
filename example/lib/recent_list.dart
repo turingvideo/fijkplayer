@@ -5,6 +5,8 @@ import 'app_bar.dart';
 import 'media_item.dart';
 
 const List<MediaUrl> samples = [
+  MediaUrl(title: "4K/8M hevc", url: "asset:///assets/hevc-4k-5s.mp4"),
+  MediaUrl(title: "4K/8M h264", url: "asset:///assets/4k-h264-5s.mp4"),
   MediaUrl(title: "h264", url: "asset:///assets/re.h264"),
   MediaUrl(title: "crosswalk", url: "asset:///assets/crosswalk.mp4"),
   MediaUrl(title: "assets file g711", url: "asset:///assets/test-g711.mp4"),

@@ -23,6 +23,7 @@ dev_dependencies:
     sdk: flutter
 
   test: ^1.16.5
+  video_player: ^2.4.10
 
   fijkplayer:
     path: ../
@@ -47,6 +48,8 @@ flutter:
     - assets/test-g711.mp4
     - assets/crosswalk.mp4
     - assets/re.h264
+    - assets/4k-h264-5s.mp4
+    - assets/hevc-4k-5s.mp4
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
 

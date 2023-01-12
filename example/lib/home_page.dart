@@ -1,3 +1,4 @@
+import 'package:fijkplayer_example/video_player_list.dart';
 import 'package:flutter/material.dart';
 
 import 'app_bar.dart';
@@ -81,6 +82,15 @@ class HomeScreen extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => ListScreen()));
               },
               text: "List View",
+            ),
+            HomeItem(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => VideoPlayerScreen()));
+              },
+              text: "Video Player",
             )
             /*
             Container(
