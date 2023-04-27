@@ -291,31 +291,47 @@ class _FijkViewState extends State<FijkView> {
       pageBuilder: _fullScreenRoutePageBuilder,
     );
 
-    await SystemChrome.setEnabledSystemUIOverlays([]);
-    bool changed = false;
+    await SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
+        overlays: []);
     var orientation = MediaQuery.of(context).orientation;
     FijkLog.d("start enter fullscreen. orientation:$orientation");
     if (_vWidth >= _vHeight) {
-      if (MediaQuery.of(context).orientation == Orientation.portrait)
-        changed = await FijkPlugin.setOrientationLandscape();
+      if (MediaQuery.of(context).orientation == Orientation.portrait) {
+        // changed = await FijkPlugin.setOrientationLandscape();
+        await OrientationPlugin.setPreferredOrientations(
+            [DeviceOrientation.landscapeRight]);
+        await OrientationPlugin.forceOrientation(
+            DeviceOrientation.landscapeRight);
+      }
     } else {
-      if (MediaQuery.of(context).orientation == Orientation.landscape)
-        changed = await FijkPlugin.setOrientationPortrait();
+      if (MediaQuery.of(context).orientation == Orientation.landscape) {
+        // changed = await FijkPlugin.setOrientationPortrait();
+        await OrientationPlugin.setPreferredOrientations(
+            [DeviceOrientation.portraitUp]);
+        await OrientationPlugin.forceOrientation(DeviceOrientation.portraitUp);
+      }
     }
-    FijkLog.d("screen orientation changed:$changed");
+    // FijkLog.d("screen orientation changed:$changed");
 
     await Navigator.of(context).push(route);
     _fullScreen = false;
     widget.player.exitFullScreen();
-    await SystemChrome.setEnabledSystemUIOverlays(
-        [SystemUiOverlay.top, SystemUiOverlay.bottom]);
-    if (changed) {
-      if (_vWidth >= _vHeight) {
-        await FijkPlugin.setOrientationPortrait();
-      } else {
-        await FijkPlugin.setOrientationLandscape();
-      }
+    await SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
+        overlays: [SystemUiOverlay.top, SystemUiOverlay.bottom]);
+    // if (changed) {
+    if (_vWidth >= _vHeight) {
+      // changed = await FijkPlugin.setOrientationPortrait();
+      await OrientationPlugin.setPreferredOrientations(
+          [DeviceOrientation.portraitUp]);
+      await OrientationPlugin.forceOrientation(DeviceOrientation.portraitUp);
+    } else {
+      // await FijkPlugin.setOrientationLandscape();
+      await OrientationPlugin.setPreferredOrientations(
+          [DeviceOrientation.landscapeRight]);
+      await OrientationPlugin.forceOrientation(
+          DeviceOrientation.landscapeRight);
     }
+    // }
   }
 
   @override

@@ -13,6 +13,11 @@ dependencies:
   flutter:
     sdk: flutter
 
+  orientation:
+    git:
+      url: git@github.com:turingvideo/flutter_orientation.git
+      ref: 1.3.2
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
