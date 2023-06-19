@@ -95,8 +95,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: "1.3.2"
-      resolved-ref: f02070ad752884387db36a71f70bc8001e5f2e8c
+      ref: "1.3.4"
+      resolved-ref: "78bd8f6815762a6b512567d40c1c8438b01a5da0"
       url: "git@github.com:turingvideo/flutter_orientation.git"
     source: git
     version: "1.3.0"
