@@ -22,6 +22,6 @@ dependencies {
 
     // fijkplayer-full include the java lib and native shared libs for armv5 armv7 arm64 x86 x86_64
 //    implementation 'com.befovy.fijkplayer:fijkplayer-full:0.7.16'
-    implementation 'com.github.turingvideo:ijkplayer-for-flutter:t0.10.0-android'
+    implementation 'com.github.turingvideo:ijkplayer-for-flutter:t0.10.1-android'
     implementation 'androidx.annotation:annotation:1.2.0'
 }
